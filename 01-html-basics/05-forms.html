@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    
+<form novalidate="">
+<label for="username"><b>Username:<b></label>
+<input  required type="text" placeholder="Enter your Name" id="username" readonly><br/><br/>
+<label for="email"><b>Enter your email:</b></label>
+<input required type="email" placeholder="Enter your email" id="email"/> <br/><br/>
+<label for="password"><b>Enter your password:</b></label>
+<input required type="password" placeholder="Enter your password" id="password"/><br/><br/>
+<label for="telephone"><b>Enter your Telephone</b></label>
+<input required type="tel" placeholder="Enter your telephone" id="telephone"><br/><br/>
+<label for="date"><b>Date of Birth:</b></label>
+<input  required type="datetime-local" placeholder="Date of Birth" id="date"><br/><br/>
+<label><b>Your Gender:</b></label><br/>
+<label for="male">Male</label>
+<input required type="radio" id="male"  name="gender"/> 
+<label for="female">Female</label>
+<input required type="radio" id="female" name="gender"/><br/><br/>
+<label><b>Hobbies:</b></label><br/>
+<label for="Gardening">Gardening</label>
+<input required type="checkbox" name="hobbies" id="Gardening"/>
+<label for="reading">Reading</label>
+<input required type="checkbox" name="hobbies" id="reading"/>
+<label for="painting">Painting</label>
+<input required type="checkbox" name="hobbies" id="painting"/><br/><br/>
+
+
+<label for="select"><b>Select City:</b></label><br>
+<select name="select" id="select">   
+<option content="Lahore">Lahore</option> 
+<option content="Burewala">Burewala</option> 
+<option content="Vehari">Vehari</option> 
+<option content="Multan">Multan</option> 
+<option value="Karachi">Karachi</option> 
+<option content="Islamabad">Islamabad</option> 
+<option content="Faisalabad">Faisalabad</option> 
+</select><br/><br/>
+
+
+<b><label>Datalist:</label></b><br>
+
+<input list="Country"> 
+<datalist id="Country">
+<option content="New York">New York</option>
+<option>New York</option>
+<option content="Japan">Japan</option>
+<option content="Paris">Paris</option>
+<option content="Austraila">Austraila</option>
+<option content="Canada">Canada</option>
+<option content="China">China</option>
+</datalist><br/><br/>
+
+
+<label for="brightness"><b>Brightness:</b> (between 0 to 100):</label></br>
+<input type="range"  id="brightness" min="0" max="100" value="50"><br/><br/>
+<label for="review"><b>Put your review here...</b></label><br/>
+
+<!-- <textarea name="" id="review" placeholder="Put your review here..."></textarea><br/><br/> -->
+<textarea name=""  placeholder="Put your review here..."></textarea><br/><br/>
+<input type="reset"  value="RESET">
+<button>Submit</button>
+    </form>
+</body>
+</html>
